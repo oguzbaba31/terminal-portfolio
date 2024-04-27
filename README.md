@@ -8,8 +8,8 @@
 
 # installation
 1. Download ZIP and extract
-2. Open folder VS Code smth.
+2. Open folder in VS Code or smth. other editors
 3. Open your terminal in folder
-4. `pip install flask` % `npm install -g typescript` (you can use python env. if you need
+4. `pip install flask` % `npm install -g typescript` (you can use python env. if you need)
 5. if you edit typescript you can `tsc` on command prompt to recompile
 6. at the end of it all `py app.py`
