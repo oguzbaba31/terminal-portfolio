@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "./static/js",  
+        "noImplicitAny": true,
+        "module": "es6",
+        "target": "es2015",  // Hedef kütüphane ES2015 olarak güncellendi
+        "allowJs": true,
+        "sourceMap": true
+    },
+    "include": [
+        "./src/**/*.ts"  
+    ]
+}

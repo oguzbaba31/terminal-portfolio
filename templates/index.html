@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- coded with love -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="terminal"></div>
+    <div id="musicPlayer" class="win95-look" style="display: none;">
+        <div id="displayScreen">
+            <div class="marquee" id="songTitle">Şarkı Adı - Sanatçı</div>
+        </div>
+        <div class="win95-container">
+            <button id="prevButton" class="button-win95">|&lt;</button>
+            <button id="playButton" class="button-win95">▶</button>
+            <button id="pauseButton" class="button-win95">||</button>
+            <button id="stopButton" class="button-win95">■</button>
+            <button id="nextButton" class="button-win95">&gt;|</button>
+            <button id="hidePlayerButton" class="button-win95">X</button>
+        </div>
+    </div>
+    <button id="showPlayerButton" class="win95-look" style="padding: 10px; position: fixed; bottom: 10px; right: 10px;">Music Player</button>
+    <audio id="audioPlayer" preload="auto">
+        <source src="{{ url_for('static', filename='musics/song1.mp3') }}" type="audio/mpeg">
+        Tarayıcınız audio elementini desteklemiyor.
+    </audio>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
